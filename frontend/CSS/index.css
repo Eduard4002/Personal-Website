@@ -7,7 +7,6 @@ body {
   background-color: #e69542;
   width: 75%;
   margin: auto;
-  border: 2px dashed black;
 }
 
 /* Navigation styles */
@@ -19,7 +18,7 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  color: #000000;
+  color: #d66b00;
 }
 .navbar_background {
   background-color: rgba(255, 255, 255, 0.5);
@@ -30,9 +29,10 @@ body {
   padding: 20px;
   font-size: x-large;
   font-weight: 600;
+  color: #d66b00;
 }
 .navbar .nav-item:hover {
-  color: #e69542;
+  color: #ac5600;
 }
 .navbar .active {
   background-color: rgba(255, 255, 255, 0.75);
@@ -40,7 +40,8 @@ body {
   padding: 5px 30px;
 }
 .navbar .active:hover {
-  color: #000000;
+  /*We dont want the hover effect to be applied to the active link*/
+  color: #d66b00;
 }
 
 /* Header styles */
@@ -48,7 +49,6 @@ body {
   font-size: 70px;
   text-align: center;
   color: white;
-  border: 2px dashed yellow;
   width: 100%;
   height: 85vh;
   position: relative;
@@ -57,4 +57,55 @@ body {
   font-size: 40px;
   color: white;
   text-align: center;
+}
+
+.projects {
+  width: 100%;
+  height: 85vh;
+  position: relative;
+  color: white;
+  font-size: 40px;
+  text-align: center;
+}
+.projects .cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+.projects .cards .card {
+  width: 75%;
+  height: 300px;
+  position: relative;
+  margin: auto;
+  transition: all 0.5s ease-in-out;
+  border: 1px solid black;
+}
+.projects .cards .card img {
+  transition: all 0.5s ease-in-out;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.5;
+}
+.projects .cards .card h1 {
+  margin: 0;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 50px;
+}
+.projects .cards .card:hover {
+  transform: scale(1.1);
+  /*add shadow*/
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  border: none;
+}
+.projects .cards .card:hover img {
+  opacity: 1;
+}
+.projects h2 {
+  margin-top: 20px;
 }/*# sourceMappingURL=index.css.map */

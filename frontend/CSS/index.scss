@@ -9,7 +9,6 @@ body {
     background-color: $primary-color;
     width: 75%;
     margin: auto;
-    border:2px dashed black;
   }
   
   
@@ -35,9 +34,10 @@ body {
         padding:20px;
         font-size: x-large;
         font-weight:600;
+        color: $nav-text-color;
         &:hover {
-            color: $primary-color;
-          }
+            color: $text-hover-color;
+        }
       }
       
      .active {
@@ -45,6 +45,7 @@ body {
         border-radius: 20px;
         padding: 5px 30px;
         &:hover{
+            /*We dont want the hover effect to be applied to the active link*/
             color: $nav-text-color;
         }
       }
@@ -56,7 +57,6 @@ body {
     font-size: 70px;
     text-align: center;
     color: white;
-    border:2px dashed yellow;
     width: 100%;
     height: 100vh - 15vh;
     position:relative;
@@ -66,5 +66,63 @@ body {
         color: white;
         text-align:center;
     
+    }
+  }
+  .projects{
+    width: 100%;
+    height: 100vh - 15vh;
+    position:relative;
+    
+    
+    color: white;
+    font-size: 40px;
+    text-align:center;
+    .cards{
+
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap:20px;
+      padding:20px;
+      .card{
+        width: 75%;
+        height:300px;
+        position: relative;
+        margin:auto;
+        transition: all 0.5s ease-in-out;
+        border:1px solid black;
+
+        img{
+          transition: all 0.5s ease-in-out;
+
+          height: 100%;
+          width: 100%;
+          object-fit:cover;
+          opacity: 0.5;
+        }
+        h1{
+          margin:0;
+          position:absolute;
+          bottom:10px;
+          left:10px;
+          font-size:50px;
+        }
+       &:hover{
+          transform: scale(1.1);
+          /*add shadow*/
+          box-shadow: 0 0 10px rgba(0,0,0,0.5);
+          cursor: pointer;
+          border:none;
+          img{
+            opacity: 1;
+
+          }
+        }
+      }
+      
+    }
+   
+    
+    h2{
+      margin-top:20px;
     }
   }
