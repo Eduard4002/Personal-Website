@@ -12,7 +12,6 @@ body {
   overflow-x: hidden;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
-  height: 2000px;
   width: 75%;
   margin: auto;
 }
@@ -46,7 +45,7 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  color: #d66b00;
+  color: #4e4e4e;
 }
 .navbar_background {
   background-color: rgba(255, 255, 255, 0.5);
@@ -57,10 +56,13 @@ body {
   padding: 20px;
   font-size: x-large;
   font-weight: 600;
-  color: #d66b00;
+  color: #4e4e4e;
 }
 .navbar .nav-item:hover {
-  color: #ac5600;
+  color: #292929;
+}
+.navbar .nav-button {
+  cursor: pointer;
 }
 .navbar .active {
   background-color: rgba(255, 255, 255, 0.75);
@@ -69,7 +71,7 @@ body {
 }
 .navbar .active:hover {
   /*We dont want the hover effect to be applied to the active link*/
-  color: #d66b00;
+  color: #4e4e4e;
 }
 
 /* Header styles */
@@ -83,7 +85,6 @@ body {
 }
 .header p {
   font-size: 40px;
-  color: white;
   text-align: center;
 }
 
