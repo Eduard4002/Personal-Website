@@ -16,6 +16,16 @@ body {
   margin: auto;
 }
 
+h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, h6::-moz-selection, p::-moz-selection, a::-moz-selection, img::-moz-selection {
+  background: rgba(255, 255, 255, 0.25);
+  color: #4e4e4e;
+}
+
+h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, a::selection, img::selection {
+  background: rgba(255, 255, 255, 0.25);
+  color: #4e4e4e;
+}
+
 @keyframes bg {
   0% {
     background-position: 0 0;

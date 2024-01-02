@@ -16,7 +16,10 @@ body {
     width: 75%;
     margin: auto;
   }
-  
+  h1::selection,h2::selection,h3::selection,h4::selection,h5::selection,h6::selection,p::selection,a::selection,img::selection{
+    background: rgba(255, 255, 255, 0.25);
+    color: $nav-text-color;
+  }
   @keyframes bg {
     0% {
       background-position: 0 0;
