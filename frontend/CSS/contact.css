@@ -13,26 +13,48 @@
   border-bottom-left-radius: 20px;
   width: 30%;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
 }
-.container .social-media-section h1 {
-  margin: 0;
+.container .social-media-section .social-media-title {
+  height: 40%;
+}
+.container .social-media-section .social-media-title p {
+  font-size: 24px;
+  width: 80%;
+  padding-top: 30px;
+  margin: auto;
+}
+.container .social-media-section .social-media-title h1 {
   width: 100%;
-  height: 20%;
-  border: 2px solid red;
+  padding-top: 30px;
+  margin-block-end: 0;
+  margin-block-start: 0;
 }
 .container .social-media-section .social-media-links {
   width: 100%;
   height: 80%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  border: 2px solid blue;
+  justify-content: center;
 }
-.container .social-media-section .social-media-links a img {
-  transition: all 0.5s ease-in-out;
+.container .social-media-section .social-media-links a {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  font-weight: 600;
+  width: 100%;
+  transition: all 0.25s ease-in-out;
+  cursor: pointer;
+  text-decoration: none;
+  color: #4e4e4e;
 }
-.container .social-media-section .social-media-links a img:hover {
-  transform: scale(1.5);
+.container .social-media-section .social-media-links a:hover {
+  background-color: rgba(255, 255, 255, 0.5);
 }
 .container .contact-form-section {
   background-color: rgba(255, 255, 255, 0.75);
