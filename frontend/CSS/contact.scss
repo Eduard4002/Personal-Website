@@ -77,5 +77,69 @@
        
         width: 70%;
         height: 100%;
+        h1{
+            margin-left: 5%;
+        }
+        form{
+            font-size:24px;
+            .contact-form-personal{
+                width: 70%;
+                height: 40px;
+                display: flex;
+                justify-content:space-evenly;
+                align-items:center  ;
+              
+
+                margin:auto;
+                margin-top:7.5%;
+                margin-bottom:10%;
+
+                input{
+                    margin:0;
+                    padding:0;
+                    height: 100%;
+                    padding-left: 10px;
+                    border:none;
+                    outline: none;
+                }
+            }
+            .message{
+                width: 100%;
+
+                textarea{
+                    width: 75%;
+                    height: 200px;
+                    display: block;
+                    margin:auto;
+                    padding:10px;
+                    resize: none;
+
+                    border:none;
+                    outline:none;
+                }
+            }
+            .submit{
+                width: 100%;
+
+                button{
+                    width: 60%;
+                    height: 80px;
+                    display: block;
+                    margin:auto;
+                    margin-top: 10%;
+                    background-color: white;
+                    color:$nav-text-color;
+                    border: none;
+                    border-radius: 10px;
+                    font-size: 24px;
+                    font-weight: 600;
+                    cursor: pointer;
+                    transition: all 0.25s ease-in-out;
+                    &:hover{
+                        background-color:rgba(255, 255, 255, 0.75)
+                    }
+                }
+            }
+        }
     }
 }
